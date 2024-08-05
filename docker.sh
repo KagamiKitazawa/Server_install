@@ -22,3 +22,5 @@ echo "Verifying Docker network creation..."
 docker network ls
 
 echo "Docker network setup complete."
+
+sudo apt install docker-compose
