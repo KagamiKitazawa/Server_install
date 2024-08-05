@@ -23,4 +23,4 @@ docker network ls
 
 echo "Docker network setup complete."
 
-sudo apt install docker-compose
+sudo apt install docker-compose -y
