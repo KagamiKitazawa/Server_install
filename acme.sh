@@ -1,8 +1,16 @@
 #!/bin/bash
 
 # 提示用户输入域名和文件夹名称
-read -p "请输入你的域名 (例如 mydomain.com)： " domain
-read -p "请输入你的文件夹名称 (例如 name)： " folder
+while [[ -z "$domain" ]]; do
+    read -p "请输入你的域名 (例如 mydomain.com)： " domain
+done
+
+while [[ -z "$folder" ]]; do
+    read -p "请输入你的文件夹名称 (例如 name)： " folder
+done
+
+echo "域名: $domain"
+echo "文件夹名称: $folder"
 
 # 安装 acme.sh
 echo "安装 acme.sh..."
