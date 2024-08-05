@@ -6,7 +6,7 @@ sudo apt-get update
 
 # 安装工具
 echo "Installing htop, lsof, nload, and net-tools..."
-sudo apt-get install -y htop lsof nload net-tools
+sudo apt-get install -y wget curl sudo htop lsof nload net-tools
 
 # 验证安装
 echo "Verifying installations..."
