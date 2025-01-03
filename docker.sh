@@ -14,8 +14,8 @@ sudo systemctl start docker
 sudo systemctl enable docker
 
 # 创建 Docker 网络
-echo "Creating Docker network 'docker-network' with subnet 10.10.0.0/24..."
-docker network create --subnet=10.10.0.0/24 docker-network
+echo "Creating Docker network 'docker-network' with subnet 10.11.0.0/24. ."
+docker network create --subnet=10.11.0.0/24 docker-network
 
 # 验证网络创建
 echo "Verifying Docker network creation..."
@@ -24,3 +24,4 @@ docker network ls
 echo "Docker network setup complete."
 
 sudo apt install docker-compose -y
+ vvvvvvvvvvvvvvvvvvvvvvvv x
