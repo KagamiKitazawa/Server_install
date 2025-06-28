@@ -6,7 +6,7 @@
 # 注意: 请以 root 权限运行此脚本。
 
 # 步骤1: 更新和升级系统，并安装基本包
-apt update -y && apt upgrade -y && apt install wget curl sudo lsof nload htop net-tools -y
+apt update -y && apt upgrade -y && apt install wget curl sudo lsof nload htop net-tools  netfilter-persistent -y
 echo "步骤1完成: 系统已更新并安装基本包。"
 
 # 步骤2: 创建新用户，用户名和密码由用户输入，并添加到 sudo 组。如果用户已存在，跳过创建
